@@ -2,73 +2,58 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/resultField"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_weight="1"
+        android:layout_width="821dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
         android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/operationField"/>
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <!-- поле знака операции -->
-    <TextView
-        android:id="@+id/operationField"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_weight="1"
-        android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/resultField"
-        />
-    <!-- поле ввода чисел -->
-    <EditText
-        android:id="@+id/numberField"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        app:layout_constraintTop_toBottomOf="@+id/resultField"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
 
     <LinearLayout
         android:id="@+id/firstButtonPanel"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/numberField"
+        app:layout_constraintTop_toBottomOf="@+id/resultField"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
+
         <Button
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:text="7"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="8"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="9"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="/"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/secondButtonPanel"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@+id/firstButtonPanel"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -76,28 +61,28 @@
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="4"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="5"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="6"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="*"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/thirdButtonPanel"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@+id/secondButtonPanel"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -105,28 +90,28 @@
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="1"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="2"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="3"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="-"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/forthButtonPanel"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@+id/thirdButtonPanel"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -134,22 +119,22 @@
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="0"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text=","/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="+"/>
         <Button
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="="/>
     </LinearLayout>
 
