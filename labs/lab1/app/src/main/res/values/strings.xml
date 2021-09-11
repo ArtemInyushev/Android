@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Lab1</string>
+    <string name="myName">Привет\nМеня зовут Артем Инюшев\nЭто мой первый проект!</string>
 </resources>
