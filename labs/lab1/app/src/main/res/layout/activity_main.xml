@@ -42,20 +42,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:onClick="onSevenClick"
+                android:onClick="OnNumberClick"
                 android:text="7" />
             <Button
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="8"
-                android:onClick="onEightClick"/>
+                android:onClick="OnNumberClick"/>
             <Button
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="9"
-                android:onClick="onNineClick"/>
+                android:onClick="OnNumberClick"/>
             <Button
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -72,19 +72,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="4"
-                android:onClick="onFourClick" />
+                android:onClick="OnNumberClick" />
             <Button
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="5"
-                android:onClick="onFiveClick" />
+                android:onClick="OnNumberClick" />
             <Button
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="6"
-                android:onClick="onSixClick"/>
+                android:onClick="OnNumberClick"/>
             <Button
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -101,19 +101,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="1"
-                android:onClick="OnOneClick"/>
+                android:onClick="OnNumberClick"/>
             <Button
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="2"
-                android:onClick="onTwoClick"/>
+                android:onClick="OnNumberClick"/>
             <Button
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="3"
-                android:onClick="onThreeClick"/>
+                android:onClick="OnNumberClick"/>
             <Button
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -130,7 +130,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="0"
-                android:onClick="onZeroClick"/>
+                android:onClick="OnNumberClick"/>
             <Button
                 android:layout_weight="1"
                 android:layout_width="match_parent"

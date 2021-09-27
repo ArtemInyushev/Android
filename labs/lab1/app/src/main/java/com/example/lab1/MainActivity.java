@@ -116,44 +116,4 @@ public class MainActivity extends AppCompatActivity {
             CurrentResult = Double.parseDouble(ResultField.getText().toString());
         }
     }
-
-    public void OnOneClick(View view){
-        OnNumberClick(view);
-    }
-
-    public void onTwoClick(View view){
-        OnNumberClick(view);
-    }
-
-    public void onThreeClick(View view){
-        OnNumberClick(view);
-    }
-
-    public void onFourClick(View view){
-        OnNumberClick(view);
-    }
-
-    public void onFiveClick(View view){
-        OnNumberClick(view);
-    }
-
-    public void onSixClick(View view){
-        OnNumberClick(view);
-    }
-
-    public void onSevenClick(View view){
-        OnNumberClick(view);
-    }
-
-    public void onEightClick(View view){
-        OnNumberClick(view);
-    }
-
-    public void onNineClick(View view){
-        OnNumberClick(view);
-    }
-
-    public void onZeroClick(View view){
-        OnNumberClick(view);
-    }
 }
