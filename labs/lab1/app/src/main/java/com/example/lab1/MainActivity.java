@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView ExpressionField;
-    private TextView ResultView;
+    private TextView ResultField;
     private String CurrentNumber = "";
     private Character CurrentOperation = ' ';
     private Double CurrentResult = 0.0;
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ExpressionField = (TextView) findViewById(R.id.ExpressionField);
-        ResultView = (TextView) findViewById(R.id.ResultField);
+        ResultField = (TextView) findViewById(R.id.ResultField);
     }
 
     private double ParseDouble(String value) {
@@ -28,46 +28,52 @@ public class MainActivity extends AppCompatActivity {
             return  Double.parseDouble(value);
         }
         catch (NumberFormatException e) {
-            ResultView.setText("Error");
+            ResultField.setText("Error");
             // do something in case of error
         }
         return -100;
     }
 
-    private double Calculate() throws Exception {
+    private void Calculate() throws Exception {
         double result = CurrentResult;
         double number = ParseDouble(CurrentNumber);
         double res;
         switch (CurrentOperation) {
             case '+':
                 res = result + number;
-                ResultView.setText(Double.toString(res));
+                ResultField.setText(Double.toString(res));
                 break;
             case '-':
                 res = result - number;
-                ResultView.setText(Double.toString(res));
+                ResultField.setText(Double.toString(res));
+                break;
             case '*':
                 res = result * number;
-                ResultView.setText(Double.toString(res));
+                ResultField.setText(Double.toString(res));
                 break;
             case '/':
                 res = result / number;
-                ResultView.setText(Double.toString(res));
+                ResultField.setText(Double.toString(res));
                 break;
             default:
-                // throw some exception
                 throw new Exception("Missing operation");
         }
-        return res;
     }
 
     public void OnNumberClick(View view){
         Button button = (Button) view;
         CharSequence numberStr = button.getText().toString();
 
-        ExpressionField.append(numberStr);
+        if(CurrentOperation == '=') {
+            ExpressionField.setText(numberStr);
+            CurrentOperation = ' ';
+        }
+        else {
+            ExpressionField.append(numberStr);
+        }
+
         if(CurrentOperation == ' '){
-            ResultView.append(numberStr);
+            ResultField.append(numberStr);
         }
         else {
             CurrentNumber += numberStr;
@@ -77,23 +83,38 @@ public class MainActivity extends AppCompatActivity {
                 e.getMessage();
             }
         }
-
-        /*if(CurrentOperation == '='){
-            ExpressionField.setText("");
-            ResultView.setText("");
-            CurrentOperation = ' ';
-        }*/
     }
 
     public void OnOperationClick(View view){
         Button button = (Button) view;
         CharSequence operation = button.getText();
-        ExpressionField.append(operation);
 
-        CurrentResult = Double.parseDouble(ResultView.getText().toString());
+        if(operation.toString().equals(".")){
+            String resultField = ExpressionField.getText().toString();
+            if(resultField.charAt(resultField.length() - 1) != '.'){
+                OnNumberClick(view);
+            }
+            return;
+        }
 
-        CurrentNumber = "";
+        // check if user has added something after operation
+        if(CurrentNumber == "" && CurrentOperation != ' '){
+            String resultField = ExpressionField.getText().toString();
+            resultField = resultField.substring(0, resultField.length() - 1);
+            ExpressionField.setText(resultField);
+        }
         CurrentOperation = operation.charAt(0);
+        ExpressionField.append(operation);
+        CurrentNumber = "";
+
+        if(CurrentOperation == '='){
+            ExpressionField.append(ResultField.getText());
+            ResultField.setText("");
+            CurrentResult = 0.0;
+        }
+        else {
+            CurrentResult = Double.parseDouble(ResultField.getText().toString());
+        }
     }
 
     public void OnOneClick(View view){
