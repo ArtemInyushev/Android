@@ -6,6 +6,7 @@
     android:background="@color/black">
 
     <EditText
+        android:id="@+id/FirstNumber"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -17,14 +18,14 @@
         android:textSize="30sp"/>
 
     <Spinner
+        android:id="@+id/Spinner"
         android:layout_width="150dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:layout_gravity="center"
-        android:background="@color/darkGrey"
-        android:entries="@array/operations" />
+        android:layout_gravity="center"/>
 
     <EditText
+        android:id="@+id/SecondNumber"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -36,6 +37,7 @@
         android:textSize="30sp"/>
 
     <TextView
+        android:id="@+id/Result"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:text="Android"
@@ -50,5 +52,6 @@
         android:layout_marginBottom="40sp"
         android:backgroundTint="@color/darkGrey"
         android:text="Calculate"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:onClick="Calculate"/>
 </LinearLayout>
