@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <View android:id="@+id/Separator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="0sp"
+        android:layout_height="60sp"
+        android:layout_alignRight="@id/Separator"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5sp"
+        android:text="Left 50%"
+        android:backgroundTint="@color/darkGrey"/>
+
+    <Button
+        android:layout_width="0sp"
+        android:layout_height="60sp"
+        android:layout_alignLeft="@id/Separator"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5sp"
+        android:text="Right 50%"
+        android:backgroundTint="@color/darkGrey"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/Center"
+        android:text="Center_left"
+        android:layout_marginRight="5sp"
+        android:backgroundTint="@color/darkGrey"/>
+
+    <Button
+        android:id="@+id/Center"
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Center"
+        android:backgroundTint="@color/darkGrey"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/Center"
+        android:text="Center_right"
+        android:layout_marginLeft="5sp"
+        android:backgroundTint="@color/darkGrey"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Bottom"
+        android:backgroundTint="@color/darkGrey"/>
+</RelativeLayout>
