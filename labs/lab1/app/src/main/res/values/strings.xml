@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Lab2</string>
-    <string-array name="operations">
+    <string-array name="options">
+        <item></item>
         <item>X</item>
         <item>0</item>
     </string-array>

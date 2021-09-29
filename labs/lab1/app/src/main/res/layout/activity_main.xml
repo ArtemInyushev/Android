@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/Header"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:gravity="center"
         android:text="Tic Tac Toe"
         android:textColor="@color/white"
@@ -24,118 +24,145 @@
         app:layout_constraintTop_toBottomOf="@id/Header">
 
         <TableRow
-            android:minHeight="100dp"
-            android:layout_marginTop="5sp">
+            android:minHeight="100dp">
 
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
         </TableRow>
 
         <TableRow
             android:minHeight="100dp"
-            android:layout_marginTop="5sp">
+            android:layout_marginTop="2sp">
 
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
         </TableRow>
 
         <TableRow
             android:minHeight="100dp"
-            android:layout_marginTop="5sp">
+            android:layout_marginTop="2sp">
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
         </TableRow>
 
         <TableRow
             android:minHeight="100dp"
-            android:layout_marginTop="5sp">
+            android:layout_marginTop="2sp">
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
 
             <Spinner
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:layout_margin="5sp"/>
+                android:layout_margin="2sp"
+                android:background="@color/darkGrey"/>
         </TableRow>
     </TableLayout>
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:text="Tic Tac Toe"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/Table"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
