@@ -40,7 +40,6 @@
         android:id="@+id/Result"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:text="Android"
         android:layout_marginTop="100sp"
         android:textSize="26sp"
         android:textColor="@color/white"/>
