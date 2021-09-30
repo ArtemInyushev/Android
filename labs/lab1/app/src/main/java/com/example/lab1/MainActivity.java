@@ -14,7 +14,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView ResultView;
     private Spinner [][] Spinners = new Spinner[4][4];
-    int counter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +36,11 @@ public class MainActivity extends AppCompatActivity {
                 spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
                     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                        counter++;
                         if(CheckIfGameFinished()) {
                             ResultView.setText("You have won!!!");
                         }
                         else {
-                            ResultView.setText(Integer.toString(counter));
+                            ResultView.setText("");
                         }
                     }
 
