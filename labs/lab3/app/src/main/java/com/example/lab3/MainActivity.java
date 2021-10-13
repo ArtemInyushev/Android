@@ -27,25 +27,25 @@ public class MainActivity extends AppCompatActivity {
         USABtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent();
-                in.setClass(MainActivity.this, UsaActivity.class);
-                startActivity(in);
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.Country, new UsaFragment())
+                        .commit();
             }
         });
         EnglandBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent();
-                in.setClass(MainActivity.this, EnglandActivity.class);
-                startActivity(in);
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.Country, new EnglandFragment())
+                        .commit();
             }
         });
         ItalyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent();
-                in.setClass(MainActivity.this, ItalyActivity.class);
-                startActivity(in);
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.Country, new ItalyFragment())
+                        .commit();
             }
         });
     }
