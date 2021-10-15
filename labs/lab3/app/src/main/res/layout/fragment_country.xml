@@ -13,18 +13,27 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/EnglandText"
         android:textSize="20sp"
         android:textColor="@color/white"/>
 
     <ImageView
+        android:id="@+id/Image"
         app:layout_constraintTop_toBottomOf="@+id/Info"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:layout_marginTop="20sp"
-        android:src="@drawable/england"/>
+        android:layout_marginTop="20sp"/>
+
+    <TextView
+        android:id="@+id/PageNum"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="40sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
