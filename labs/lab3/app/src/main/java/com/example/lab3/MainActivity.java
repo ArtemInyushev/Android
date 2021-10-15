@@ -1,10 +1,10 @@
 package com.example.lab3;
 
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
+import android.webkit.WebView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,8 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ViewPager2 pager=(ViewPager2)findViewById(R.id.pager);
-        FragmentStateAdapter pageAdapter = new MyAdapter(this);
-        pager.setAdapter(pageAdapter);
+        WebView browser = (WebView) findViewById(R.id.webBrowser);
+        browser.loadUrl("https://drive.google.com/file/d/1l5l0F0wCJaYs1XiqebrprJWsdMiVuznW/view");
     }
 }
