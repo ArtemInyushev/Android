@@ -1,32 +1,4 @@
 <resources>
     <string name="app_name">lab3</string>
-    <string name="UsaBtn">USA</string>
-    <string name="EnglandBtn">England</string>
-    <string name="ItalyBtn">Italy</string>
-    <string name="UsaText">
-        The United States of America, commonly known as the United States or America,
-        is a country primarily located in North America.
-        It consists of 50 states, a federal district, five major unincorporated territories,
-        326 Indian reservations, and some minor possessions.
-        At 3.8 million square miles, it is the world\'s third- or fourth-largest country by total area.
-    </string>
-    <string name="EnglandText">
-        England is a country that is part of the United Kingdom.
-        It shares land borders with Wales to its west and Scotland to its north.
-        The Irish Sea lies northwest of England and the Celtic Sea to the southwest.
-        England is separated from continental Europe by the North Sea to the east and
-        the English Channel to the south.
-        The country covers five-eighths of the island of Great Britain,
-        which lies in the North Atlantic, and includes over 100 smaller islands,
-        such as the Isles of Scilly and the Isle of Wight.
-    </string>
-    <string name="ItalyText">
-        Italy, officially the Italian Republic, is a country consisting of a peninsula
-        delimited by the Alps and several islands surrounding it.
-        Italy is located in the center of the Mediterranean Sea,
-        in Southern Europe, and is also considered part of Western Europe.
-        A unitary parliamentary republic with Rome as its capital and largest city,
-        the country covers a total area of 301,340 km2
-        and the enclaved microstates of Vatican City and San Marino.
-    </string>
+    <string name="start_url">https://stackoverflow.com/</string>
 </resources>
