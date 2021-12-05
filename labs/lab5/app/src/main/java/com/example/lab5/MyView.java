@@ -15,15 +15,15 @@ public class MyView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
         Paint paint = new Paint();
         paint.setColor(Color.RED);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(20);
-
-        x++;
-        canvas.drawRect(x,200,300,500,paint);
-        
+        int widthRect = 300;
+        x = x + 10;
+        if (x > canvas.getWidth() - widthRect)
+            x = canvas.getWidth() - widthRect;
+        canvas.drawRect(x,200,widthRect + x,500,paint);
         invalidate();
     }
 }
