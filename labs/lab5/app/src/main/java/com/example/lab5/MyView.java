@@ -6,7 +6,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
 public class MyView extends View {
-    int x = 0;
+    int x = 0; // Координата по горизонталі лівого верхнього кута прямокутника
+    int widthRect = 300; // Ширина прямокутника
+    int vx = 10; // Скорость по оси Ox
 
     public MyView(Context context) {
         super(context);
@@ -19,10 +21,9 @@ public class MyView extends View {
         paint.setColor(Color.RED);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(20);
-        int widthRect = 300;
-        x = x + 10;
-        if (x > canvas.getWidth() - widthRect)
-            x = canvas.getWidth() - widthRect;
+        x = x + vx;
+        if (x > canvas.getWidth() - widthRect) vx = vx * -1;
+        if (x < 0) vx = vx * -1;
         canvas.drawRect(x,200,widthRect + x,500,paint);
         invalidate();
     }
